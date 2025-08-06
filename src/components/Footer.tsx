@@ -71,7 +71,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 pb-10 border-b border-gray-700">
           <div className="lg:col-span-2">
             <img 
-              src="/lovable-uploads/7d120ee6-3614-4b75-9c35-716d54490d67.png" 
+              src="/lovable-uploads/text-1754523112276.png" 
               alt="AI Landlord Logo" 
               className="h-10 w-auto mb-6 invert" // Added invert to make logo white
             />

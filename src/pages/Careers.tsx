@@ -1,6 +1,6 @@
 
 import PageLayout from '@/components/PageLayout';
-import { ArrowLeft, Mail, Linkedin, Phone } from 'lucide-react';
+import { ArrowLeft, Mail, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import { useEffect } from 'react';
@@ -37,7 +37,7 @@ const Careers = () => {
                   transition={{ duration: 0.5, delay: 0.2 }} 
                   className="text-xl text-gray-600 mb-4"
                 >
-                  We're looking for passionate innovators to help us revolutionize the smart textile industry.
+                  We're looking for passionate innovators to help us revolutionize the property management industry with AI-powered tenant screening.
                 </motion.p>
                 
                 <motion.p
@@ -46,7 +46,7 @@ const Careers = () => {
                   transition={{ duration: 0.5, delay: 0.3 }}
                   className="text-xl text-gray-600 mb-12"
                 >
-                  We welcome both full-time professionals and interns who are eager to contribute to groundbreaking technology.
+                  We welcome both full-time professionals and interns who are eager to contribute to groundbreaking AI technology that's transforming how landlords screen tenants.
                 </motion.p>
                 
                 <motion.div 
@@ -55,20 +55,20 @@ const Careers = () => {
                   transition={{ duration: 0.6 }}
                   className="mb-16"
                 >
-                  <h2 className="text-3xl font-bold mb-6">Why Join WRLDS?</h2>
+                  <h2 className="text-3xl font-bold mb-6">Why Join AI Landlord?</h2>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                     {[
                       {
-                        title: "Innovation",
-                        description: "Work on cutting-edge technology that's changing multiple industries."
+                        title: "AI Innovation",
+                        description: "Work on cutting-edge AI technology that's revolutionizing property management and tenant screening."
                       },
                       {
-                        title: "Impact",
-                        description: "Create solutions that enhance safety, performance, and quality of life."
+                        title: "Real Impact",
+                        description: "Create solutions that save landlords 10+ hours per week and improve tenant quality across the industry."
                       },
                       {
-                        title: "Growth",
-                        description: "Develop your skills in a rapidly expanding field with diverse challenges."
+                        title: "Rapid Growth",
+                        description: "Develop your skills in a rapidly expanding AI field with diverse challenges and learning opportunities."
                       }
                     ].map((benefit, i) => (
                       <div key={i} className="bg-gray-50 p-6 rounded-lg border border-gray-100 h-full">
@@ -79,20 +79,20 @@ const Careers = () => {
                   </div>
                   
                   <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm mt-12">
-                    <h3 className="font-bold text-xl mb-6">Contact Our COO</h3>
+                    <h3 className="font-bold text-xl mb-6">Contact Our Developer & Founder</h3>
                     <div className="bg-white rounded-xl p-6 border border-gray-200">
                       <div className="flex flex-col items-center text-center">
                         <img 
                           src="/lovable-uploads/a9bb9110-964a-43b0-a5ab-7162140cd133.png"
-                          alt="Love Anderberg"
+                          alt="Alexander Hernandez"
                           className="w-32 h-32 rounded-full mb-4 object-cover filter grayscale"
                         />
-                        <h3 className="text-xl font-bold text-gray-900">Love Anderberg</h3>
-                        <p className="text-gray-600 mb-4">COO</p>
+                        <h3 className="text-xl font-bold text-gray-900">Alexander Hernandez</h3>
+                        <p className="text-gray-600 mb-4">Developer and Founder</p>
                         <div className="flex flex-col space-y-3">
-                          <a href="mailto:love@wrlds.com" className="flex items-center text-gray-700 hover:text-blue-600">
+                          <a href="mailto:alexhernandez@ailandlord.com" className="flex items-center text-gray-700 hover:text-blue-600">
                             <Mail className="w-5 h-5 mr-2" />
-                            love@wrlds.com
+                            alexhernandez@ailandlord.com
                           </a>
                           <a 
                             href="https://www.linkedin.com/in/love-anderberg-67549a174/" 
@@ -102,10 +102,6 @@ const Careers = () => {
                           >
                             <Linkedin className="w-5 h-5 mr-2" />
                             LinkedIn Profile
-                          </a>
-                          <a href="tel:+46760149508" className="flex items-center text-gray-700 hover:text-blue-600">
-                            <Phone className="w-5 h-5 mr-2" />
-                            076-014 95 08
                           </a>
                         </div>
                       </div>

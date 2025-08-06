@@ -1,8 +1,9 @@
-import { ArrowLeft, CheckCircle, Clock, FileSearch, Settings, Cpu, Code, Truck, BarChart, Check } from 'lucide-react';
+import { ArrowLeft, CheckCircle, Clock, FileSearch, Settings, Cpu, Code, Truck, BarChart, Check, MessageSquare, Shield, Bot, Users, Database, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useState, useRef, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import PageLayout from '@/components/PageLayout';
+
 const DevelopmentProcess = () => {
   const [activeProcess, setActiveProcess] = useState(1);
   const processRef = useRef<HTMLDivElement>(null);
@@ -13,36 +14,38 @@ const DevelopmentProcess = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Process component logic
+  // AI Landlord Pipeline Process
   const processes = [{
     id: 1,
-    title: "Textile Sensor Design",
-    description: "We begin by designing custom textile sensors specifically for your industry and use case, selecting appropriate conductive materials and sensor types.",
-    steps: ["Industry-specific requirement analysis", "Sensor type and material selection", "Prototype sensor development", "Initial testing and calibration"]
+    title: "Lead Capture & Initial Screening",
+    description: "Our AI chatbot automatically engages with potential tenants across multiple platforms, collecting essential information and conducting preliminary qualification.",
+    steps: ["24/7 chatbot deployment on Zillow, Craigslist, Facebook", "Automated initial questions and information gathering", "Basic qualification criteria assessment", "Lead scoring and prioritization"]
   }, {
     id: 2,
-    title: "Garment Integration",
-    description: "Our engineering team seamlessly integrates sensors into clothing and footwear while maintaining comfort, durability, and washability.",
-    steps: ["Ergonomic placement optimization", "Non-intrusive integration techniques", "Durability and washability testing", "Comfort and user experience validation"]
+    title: "Intelligent Conversation & Qualification",
+    description: "Advanced AI algorithms conduct natural conversations to assess tenant suitability, asking relevant questions and evaluating responses in real-time.",
+    steps: ["Dynamic conversation flow based on responses", "Income and employment verification", "Rental history assessment", "Lifestyle and pet policy alignment"]
   }, {
     id: 3,
-    title: "AI & Data Analytics",
-    description: "We develop specialized algorithms that transform textile sensor data into actionable insights unique to your industry requirements.",
-    steps: ["Industry-specific algorithm development", "ML model training with domain data", "Real-time analytics implementation", "Insight delivery optimization"]
+    title: "Background Check Integration",
+    description: "Seamless integration with TransUnion SmartMove provides FCRA-compliant background checks including credit, criminal, and eviction history.",
+    steps: ["FCRA-compliant screening authorization", "Credit report analysis and scoring", "Criminal background verification", "Eviction history review"]
   }, {
     id: 4,
-    title: "Production & Certification",
-    description: "We handle manufacturing, quality control, and ensure all textile sensor products meet relevant industry standards and certifications.",
-    steps: ["Textile manufacturing partner selection", "Quality assurance processes", "Industry-specific certification procurement", "Initial production supervision"]
+    title: "AI-Powered Risk Assessment",
+    description: "Machine learning algorithms analyze all collected data to generate comprehensive risk profiles and qualification scores for each applicant.",
+    steps: ["Multi-factor risk analysis", "Predictive modeling for payment behavior", "Comprehensive scoring algorithm", "Risk categorization and recommendations"]
   }, {
     id: 5,
-    title: "Deployment & Support",
-    description: "We provide comprehensive training, implementation assistance, and ongoing support to ensure successful adoption and continuous improvement.",
-    steps: ["User training and onboarding", "Data interpretation guidance", "Performance monitoring", "Continuous improvement iterations"]
+    title: "Qualified Applicant Delivery",
+    description: "Only pre-screened, qualified applicants with complete background checks are delivered to landlords with detailed reports and recommendations.",
+    steps: ["Comprehensive applicant reports", "Risk assessment summaries", "Recommendation generation", "Direct landlord notification"]
   }];
+
   useEffect(() => {
     processSectionsRef.current = processes.map((_, i) => processSectionsRef.current[i] || null);
   }, []);
+
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
       if (entries[0].isIntersecting) {
@@ -58,6 +61,7 @@ const DevelopmentProcess = () => {
     }
     return () => observer.disconnect();
   }, []);
+
   useEffect(() => {
     const handleScroll = () => {
       const viewportHeight = window.innerHeight;
@@ -84,35 +88,37 @@ const DevelopmentProcess = () => {
     setTimeout(handleScroll, 100);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
   const developmentSteps = [{
-    icon: <FileSearch className="h-6 w-6" />,
-    title: "1. Discovery & Requirements",
-    description: "We begin by understanding your needs, market opportunities, and technical requirements to establish clear project parameters and goals."
+    icon: <MessageSquare className="h-6 w-6" />,
+    title: "1. Lead Capture",
+    description: "AI chatbot automatically engages with potential tenants across multiple platforms, collecting essential information and conducting preliminary qualification."
   }, {
-    icon: <Settings className="h-6 w-6" />,
-    title: "2. Concept & Design",
-    description: "Our experts craft initial designs and technical specifications, ensuring alignment with your brand identity and user experience goals."
+    icon: <Bot className="h-6 w-6" />,
+    title: "2. Intelligent Screening",
+    description: "Advanced AI algorithms conduct natural conversations to assess tenant suitability, asking relevant questions and evaluating responses in real-time."
+  }, {
+    icon: <Shield className="h-6 w-6" />,
+    title: "3. Background Verification",
+    description: "Seamless integration with TransUnion SmartMove provides FCRA-compliant background checks including credit, criminal, and eviction history."
   }, {
     icon: <Cpu className="h-6 w-6" />,
-    title: "3. Hardware Development",
-    description: "We select, design, and integrate sensor components, creating optimized hardware solutions that balance performance and efficiency."
+    title: "4. AI Risk Assessment",
+    description: "Machine learning algorithms analyze all collected data to generate comprehensive risk profiles and qualification scores for each applicant."
   }, {
-    icon: <Code className="h-6 w-6" />,
-    title: "4. Software Development",
-    description: "Our development team builds robust firmware, apps, and cloud platforms tailored to your product's unique requirements and user needs."
+    icon: <Users className="h-6 w-6" />,
+    title: "5. Qualified Delivery",
+    description: "Only pre-screened, qualified applicants with complete background checks are delivered to landlords with detailed reports and recommendations."
   }, {
-    icon: <CheckCircle className="h-6 w-6" />,
-    title: "5. Testing & Iteration",
-    description: "Rigorous testing protocols ensure reliability, durability, and optimal performance across all conditions and use cases."
+    icon: <Database className="h-6 w-6" />,
+    title: "6. Data Management",
+    description: "Secure storage and management of all screening data with full FCRA compliance and privacy protection measures."
   }, {
-    icon: <Truck className="h-6 w-6" />,
-    title: "6. Production & Deployment",
-    description: "We support the transition from prototype to manufacturing, ensuring quality standards and seamless deployment."
-  }, {
-    icon: <BarChart className="h-6 w-6" />,
-    title: "7. Continuous Improvement",
-    description: "Post-launch analytics and feedback loops drive ongoing improvements, updates, and potential new features."
+    icon: <Zap className="h-6 w-6" />,
+    title: "7. Continuous Learning",
+    description: "AI models continuously improve based on screening outcomes and landlord feedback, enhancing accuracy and efficiency over time."
   }];
+
   return <PageLayout>
       <section className="pt-24 pb-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -122,15 +128,15 @@ const DevelopmentProcess = () => {
               Back to Home
             </Link>
             
-            <h1 className="text-4xl font-bold mb-8">Our Structured Development Process</h1>
+            <h1 className="text-4xl font-bold mb-8">AI Landlord Pipeline</h1>
             
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-gray-600 mb-12">
-                We've refined our development methodology to minimize risk and maximize innovation, 
-                ensuring your textile sensor project moves efficiently from concept to reality.
+                Our AI-powered tenant screening pipeline automatically processes leads 24/7, 
+                conducts comprehensive background checks, and delivers only qualified applicants to landlords.
               </p>
               
-              {/* From Textile to Intelligence Process Section */}
+              {/* AI Landlord Pipeline Process Section */}
               <div className="relative mt-12" ref={processRef} style={{
               opacity: 0
             }}>
@@ -167,27 +173,27 @@ const DevelopmentProcess = () => {
               </div>
               
               <div className="bg-gray-50 p-8 rounded-lg my-12 border border-gray-100">
-                <h3 className="text-xl font-semibold mb-4">Our Development Principles</h3>
+                <h3 className="text-xl font-semibold mb-4">AI Landlord Benefits</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 mr-2" />
-                    <span>Rapid iteration cycles for continuous improvement</span>
+                    <span>24/7 automated lead processing saves 10+ hours per week</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 mr-2" />
-                    <span>Transparent communication throughout the development process</span>
+                    <span>FCRA-compliant background checks via TransUnion SmartMove</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 mr-2" />
-                    <span>Modular architecture allowing for flexible and scalable solutions</span>
+                    <span>AI-powered risk assessment and qualification scoring</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 mr-2" />
-                    <span>Risk mitigation strategies built into every phase</span>
+                    <span>Only qualified applicants delivered to landlords</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 mr-2" />
-                    <span>Focus on user experience and practical functionality</span>
+                    <span>Multi-platform integration (Zillow, Craigslist, Facebook, SMS)</span>
                   </li>
                 </ul>
               </div>
@@ -206,6 +212,7 @@ const DevelopmentProcess = () => {
       </section>
     </PageLayout>;
 };
+
 export default DevelopmentProcess;
 
 // Helper icon component for later
