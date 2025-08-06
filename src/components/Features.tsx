@@ -109,15 +109,15 @@ const Features = () => {
   }, []);
 
   const useCases = [{
-    image: "/lovable-uploads/pexels-ritesh-singh-64833387-33327062.png",
+    image: "/lovable-uploads/pexels-ritesh-singh-64833387-33327062.jpg",
     title: "Small Landlords (1-5 units)",
     description: "Perfect for DIY landlords who want to automate their screening process without the complexity of enterprise solutions."
   }, {
-    image: "/lovable-uploads/pexels-lina-3639510.png",
+    image: "/lovable-uploads/pexels-lina-3639510.jpg",
     title: "Medium Landlords (6-20 units)",
     description: "Scale your operations with automated lead qualification and comprehensive tenant screening across multiple properties."
   }, {
-    image: "/lovable-uploads/pexels-leonarddahmen-2974834.png",
+    image: "/lovable-uploads/pexels-leonarddahmen-2974834.jpg",
     title: "Property Management Companies",
     description: "Enterprise-grade automation for managing multiple portfolios with advanced reporting and analytics."
   }];
