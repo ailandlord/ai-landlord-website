@@ -1,69 +1,129 @@
-# Welcome to your Lovable project
+# AI Landlord Website
 
-## Project info
+## Project Overview
 
-**URL**: https://lovable.dev/projects/ec1d4f1e-2506-4da5-a91b-34afa90cceb6
+AI Landlord is an intelligent property management platform that automates tenant screening, lead qualification, and leasing processes using AI-powered chatbots and smart decision-making systems.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- **24/7 AI Chatbot**: Intelligent lead response across Zillow, Craigslist, Facebook, SMS, and email
+- **Automated Lead Qualification**: Customizable scoring rules for tenant screening
+- **FCRA-Compliant Background Screening**: Secure screening via TransUnion SmartMove
+- **Smart Scheduling**: Automated property showing scheduling with calendar integration
+- **Lead Analytics**: Comprehensive reporting and analytics to track performance
+- **Multi-Platform Integration**: Works across all major rental platforms
 
-**Use Lovable**
+## Technology Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ec1d4f1e-2506-4da5-a91b-34afa90cceb6) and start prompting.
+This website is built with modern web technologies:
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend**: React 18 with TypeScript
+- **Styling**: Tailwind CSS with shadcn/ui components
+- **Build Tool**: Vite for fast development and optimized builds
+- **Routing**: React Router DOM for client-side navigation
+- **Animations**: Framer Motion for smooth interactions
+- **SEO**: React Helmet Async for meta tag management
 
-**Use your preferred IDE**
+## Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Node.js 18+ and npm
+- Git
 
-Follow these steps:
+### Installation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```bash
+# Clone the repository
+git clone <repository-url>
+cd ai-landlord-website
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Install dependencies
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The development server will start at `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Available Scripts
 
-**Use GitHub Codespaces**
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/            # shadcn/ui components
+│   ├── Hero.tsx       # Landing page hero section
+│   ├── Features.tsx   # Product features showcase
+│   ├── Projects.tsx   # Success stories
+│   └── ...
+├── pages/             # Page components
+│   ├── Index.tsx      # Homepage
+│   ├── About.tsx      # About page
+│   └── ...
+├── hooks/             # Custom React hooks
+├── lib/               # Utility functions
+└── data/              # Static data and content
+```
 
-This project is built with .
+## Key Components
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Hero Section
+The main landing page hero showcases AI Landlord's value proposition with compelling copy and clear call-to-action buttons.
 
-## How can I deploy this project?
+### Features Section
+Interactive showcase of AI Landlord's core features including AI chatbot, background screening, scheduling, and analytics.
 
-Simply open [Lovable](https://lovable.dev/projects/ec1d4f1e-2506-4da5-a91b-34afa90cceb6) and click on Share -> Publish.
+### Success Stories
+Carousel of real landlord success stories demonstrating the platform's effectiveness across different property types and sizes.
 
-## I want to use a custom domain - is that possible?
+### Navigation
+Responsive navigation with dropdown menus for Success Stories and Resources sections.
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+## Deployment
+
+### Development
+```bash
+npm run dev
+```
+
+### Production
+```bash
+npm run build
+npm run preview
+```
+
+### Deployment Platforms
+
+- **Netlify**: Connect your repository for automatic deployments
+- **Vercel**: Optimized for React applications
+- **GitHub Pages**: Free hosting for public repositories
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contact
+
+- Website: [ailandlord.com](https://ailandlord.com)
+- Email: info@ailandlord.com
+- LinkedIn: [AI Landlord](https://www.linkedin.com/company/ai-landlord)
+
+## Support
+
+For support and questions about AI Landlord's tenant screening platform, please contact our team at support@ailandlord.com.

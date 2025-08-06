@@ -48,7 +48,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <img src="/lovable-uploads/7d120ee6-3614-4b75-9c35-716d54490d67.png" alt="WRLDS Technologies Logo" className={cn("h-8 w-auto", isScrolled ? "" : "brightness-0 invert")} />
+              <img src="/lovable-uploads/7d120ee6-3614-4b75-9c35-716d54490d67.png" alt="AI Landlord Logo" className={cn("h-8 w-auto", isScrolled ? "" : "brightness-0 invert")} />
             </Link>
           </div>
           
@@ -67,45 +67,45 @@ const Navbar = () => {
                 <NavigationMenuItem>
                   <Link to="/about">
                     <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
-                      About Us
+                      About
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
                 
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className={cn(isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
-                    Customer Cases
+                    Success Stories
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid gap-3 p-4 w-[400px]">
                       <li>
-                        <Link to="/projects/firecat" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">FireCat 6th SENSE</div>
-                          <p className="text-sm text-gray-500">Smart textiles for firefighter safety</p>
+                        <Link to="/projects/small-landlord" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">Small Landlord Success</div>
+                          <p className="text-sm text-gray-500">How Sarah saved 13 hours per week</p>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/projects/sport-retail" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Sports Performance</div>
-                          <p className="text-sm text-gray-500">Advanced tracking for athletes</p>
+                        <Link to="/projects/property-management" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">Property Management Scale</div>
+                          <p className="text-sm text-gray-500">Managing 25+ units with automation</p>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/projects/workwear" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Workwear Climate Control</div>
-                          <p className="text-sm text-gray-500">Temperature regulation for extreme environments</p>
+                        <Link to="/projects/student-housing" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">Student Housing Solution</div>
+                          <p className="text-sm text-gray-500">Specialized screening for student rentals</p>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/projects/hockey" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Ice Hockey Elite Tracker</div>
-                          <p className="text-sm text-gray-500">Performance tracking for ice hockey</p>
+                        <Link to="/projects/luxury-properties" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">Luxury Property Screening</div>
+                          <p className="text-sm text-gray-500">High-end property management</p>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/projects/pet-tracker" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Pet Activity Counter</div>
-                          <p className="text-sm text-gray-500">Smart collars for pet activity monitoring</p>
+                        <Link to="/projects/multi-family" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">Multi-Family Portfolio</div>
+                          <p className="text-sm text-gray-500">Managing 100+ units across 5 properties</p>
                         </Link>
                       </li>
                     </ul>
@@ -114,48 +114,35 @@ const Navbar = () => {
                 
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className={cn(isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
-                    Learn More
+                    Resources
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid gap-3 p-4 w-[400px]">
-                      <li>
-                        <Link to="/tech-details" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Technology Details</div>
-                          <p className="text-sm text-gray-500">How our smart textile platform works</p>
-                        </Link>
-                      </li>
                       <li>
                         <Link to="/development-process" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Development Process</div>
-                          <p className="text-sm text-gray-500">Our approach to creating custom solutions</p>
+                          <div className="font-medium">How It Works</div>
+                          <p className="text-sm text-gray-500">See our tenant screening process</p>
                         </Link>
                       </li>
                       <li>
-                        
+                        <Link to="/blog" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">Blog</div>
+                          <p className="text-sm text-gray-500">Landlord tips and industry insights</p>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/careers" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">Careers</div>
+                          <p className="text-sm text-gray-500">Join our team</p>
+                        </Link>
                       </li>
                     </ul>
                   </NavigationMenuContent>
-                </NavigationMenuItem>
-                
-                <NavigationMenuItem>
-                  <Link to="/blog">
-                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
-                      News
-                    </NavigationMenuLink>
-                  </Link>
-                </NavigationMenuItem>
-                
-                <NavigationMenuItem>
-                  <Link to="/careers">
-                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
-                      Careers
-                    </NavigationMenuLink>
-                  </Link>
                 </NavigationMenuItem>
                 
                 <NavigationMenuItem>
                   <button onClick={() => scrollToSection('contact')} className={cn("px-4 py-2 rounded-md transition-colors", isScrolled ? "bg-gray-200 text-gray-700 hover:bg-gray-300" : "bg-gray-700 text-white hover:bg-gray-600")}>
-                    Contact Us
+                    Start Free Trial
                   </button>
                 </NavigationMenuItem>
               </NavigationMenuList>
@@ -185,30 +172,30 @@ const Navbar = () => {
             setIsMenuOpen(false);
             window.scrollTo(0, 0);
           }}>
-            About Us
+            About
           </Link>
           
-          {/* Simplified Customer Cases - no dropdown */}
-          <Link to="/projects/firecat" className={cn("block px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
+          {/* Simplified Success Stories - no dropdown */}
+          <Link to="/projects/small-landlord" className={cn("block px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
             setIsMenuOpen(false);
             window.scrollTo(0, 0);
           }}>
-            Customer Cases
+            Success Stories
           </Link>
           
-          {/* Simplified Learn More - no dropdown */}
-          <Link to="/tech-details" className={cn("block px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
+          {/* Simplified Resources - no dropdown */}
+          <Link to="/development-process" className={cn("block px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
             setIsMenuOpen(false);
             window.scrollTo(0, 0);
           }}>
-            Learn More
+            Resources
           </Link>
           
           <Link to="/blog" className={cn("block px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
             setIsMenuOpen(false);
             window.scrollTo(0, 0);
           }}>
-            News
+            Blog
           </Link>
           
           <Link to="/careers" className={cn("block px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
@@ -219,7 +206,7 @@ const Navbar = () => {
           </Link>
           
           <button onClick={() => scrollToSection('contact')} className={cn("block w-full text-left px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 bg-gray-200 hover:bg-gray-300" : "text-white bg-gray-700 hover:bg-gray-600")}>
-            Contact Us
+            Start Free Trial
           </button>
         </div>
       </div>

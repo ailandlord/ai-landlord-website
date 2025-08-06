@@ -1,4 +1,4 @@
-import { ArrowRight, Bot, Shield, Clock, MessageSquare } from "lucide-react";
+import { ArrowRight, Bot, Shield, Clock, MessageSquare, CheckCircle } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
@@ -58,7 +58,7 @@ const Hero = () => {
             {/* Fallback image if video fails to load */}
             <img 
               src="/lovable-uploads/4bfa0d71-3ed2-4693-90b6-35142468907f.png" 
-              alt="WRLDS Technologies Connected People" 
+              alt="AI Landlord - Automated Tenant Screening" 
               className={`w-full h-full object-cover opacity-70 grayscale ${isMobile ? 'object-right' : 'object-center'}`} 
             />
           </video>
@@ -70,7 +70,7 @@ const Hero = () => {
             <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
               <motion.h1 className="banner-title text-white" variants={itemVariants}>Automate Your Tenant Screening with AI</motion.h1>
               <motion.p className="banner-subtitle text-gray-300 mt-4 sm:mt-6" variants={itemVariants}>
-                Stop wasting time on unqualified leads. Our AI chatbot screens tenants 24/7 and only sends you qualified applicants.
+                Stop wasting time on unqualified leads. Our AI chatbot screens tenants 24/7 and only sends you qualified applicants with FCRA-compliant background checks.
               </motion.p>
               <motion.div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8 justify-center items-center" variants={itemVariants}>
                 {/* Styled as a button but using an anchor tag for project navigation */}
@@ -78,9 +78,9 @@ const Hero = () => {
                   className="w-full sm:w-auto min-h-[44px] px-6 sm:px-8 py-3 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 transition-all shadow-lg hover:shadow-xl hover:shadow-gray-300/20 flex items-center justify-center group text-sm sm:text-base font-medium"
                   onClick={e => {
                     e.preventDefault();
-                    const projectsSection = document.getElementById('projects');
-                    if (projectsSection) {
-                      projectsSection.scrollIntoView({
+                    const featuresSection = document.getElementById('features');
+                    if (featuresSection) {
+                      featuresSection.scrollIntoView({
                         behavior: 'smooth'
                       });
                     }
@@ -113,7 +113,7 @@ const Hero = () => {
               <Bot className="w-5 h-5 md:w-6 md:h-6" />
             </div>
             <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">24/7 AI Chatbot</h3>
-            <p className="text-gray-600 text-xs md:text-sm">Intelligent chatbot that screens tenants around the clock across all platforms.</p>
+            <p className="text-gray-600 text-xs md:text-sm">Intelligent chatbot that screens tenants around the clock across Zillow, Craigslist, Facebook, and SMS.</p>
           </motion.div>
           
           <motion.div className="bg-white p-4 md:p-5 rounded-xl shadow-sm border border-gray-100 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md" variants={itemVariants}>
@@ -121,15 +121,15 @@ const Hero = () => {
               <Shield className="w-5 h-5 md:w-6 md:h-6" />
             </div>
             <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">FCRA Compliant</h3>
-            <p className="text-gray-600 text-xs md:text-sm">Secure background screening via TransUnion SmartMove with full legal compliance.</p>
+            <p className="text-gray-600 text-xs md:text-sm">Secure background screening via TransUnion SmartMove with full legal compliance and protection.</p>
           </motion.div>
           
           <motion.div className="bg-white p-4 md:p-5 rounded-xl shadow-sm border border-gray-100 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md" variants={itemVariants}>
             <div className="w-10 h-10 md:w-12 md:h-12 bg-gray-100 flex items-center justify-center rounded-lg text-gray-500 mb-2 md:mb-3">
               <Clock className="w-5 h-5 md:w-6 md:h-6" />
             </div>
-            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Time Savings</h3>
-            <p className="text-gray-600 text-xs md:text-sm">Save 10+ hours per week with automated lead qualification and screening.</p>
+            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Save 10+ Hours/Week</h3>
+            <p className="text-gray-600 text-xs md:text-sm">Automated lead qualification and screening eliminates manual processing time.</p>
           </motion.div>
         </motion.div>
       </div>

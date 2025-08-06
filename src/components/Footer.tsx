@@ -34,7 +34,7 @@ const Footer = () => {
         from_name: "Website Subscriber",
         from_email: email,
         message: `New subscription request from the website footer.`,
-        to_name: 'WRLDS Team',
+        to_name: 'AI Landlord Team',
         reply_to: email
       };
       
@@ -72,19 +72,18 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <img 
               src="/lovable-uploads/7d120ee6-3614-4b75-9c35-716d54490d67.png" 
-              alt="WRLDS Technologies Logo" 
+              alt="AI Landlord Logo" 
               className="h-10 w-auto mb-6 invert" // Added invert to make logo white
             />
             <p className="text-gray-300 mb-6">
-              WRLDS Technologies provides an end-to-end platform for the creation and deployment of AI-powered smart sensor devices, giving customers 100% ownership while handling the complete technological development.
+              AI Landlord automates tenant screening with AI-powered chatbots, helping landlords save 10+ hours per week while finding better tenants through FCRA-compliant background checks.
             </p>
             <p className="text-gray-300 mb-6">
-              Hornsgatan 110<br />
-              117 26, Stockholm Sweden
+              Contact us to learn how we can transform your tenant screening process.
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://www.linkedin.com/company/wrldstechnologies/" 
+                href="https://www.linkedin.com/company/ai-landlord/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 transition-colors hover:bg-gray-700 hover:text-white"
@@ -97,14 +96,15 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4 text-white">Company</h3>
             <ul className="space-y-3">
-              <li><Link to="/about" className="text-gray-300 hover:text-white transition-colors">About Us</Link></li>
+              <li><Link to="/about" className="text-gray-300 hover:text-white transition-colors">About</Link></li>
               <li><Link to="/careers" className="text-gray-300 hover:text-white transition-colors">Careers</Link></li>
               <li><Link to="/privacy-policy" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/development-process" className="text-gray-300 hover:text-white transition-colors">How It Works</Link></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-lg font-bold mb-4 text-white">Get in Touch</h3>
+            <h3 className="text-lg font-bold mb-4 text-white">Get Updates</h3>
             <form className="space-y-4" onSubmit={handleSubscribe}>
               <div>
                 <input 
@@ -134,10 +134,11 @@ const Footer = () => {
         
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} WRLDS Technologies. All rights reserved.
+            © {new Date().getFullYear()} AI Landlord. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <Link to="/privacy-policy" className="text-sm text-gray-400 hover:text-white transition-colors">Privacy Policy</Link>
+            <Link to="/terms-of-service" className="text-sm text-gray-400 hover:text-white transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>

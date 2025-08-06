@@ -8,52 +8,52 @@ import { useIsMobile } from "@/hooks/use-mobile";
 const projects = [
   {
     id: 1,
-    title: "6th SENSE Safety System",
-    brand: "FireCat Group",
-    description: "AI-driven sensor solution integrated into uniforms for law enforcement, military and firefighters, providing real-time vital monitoring and situational awareness in high-risk environments.",
-    tags: ["Safety", "Military", "AI Sensors", "Real-time Monitoring"],
+    title: "Small Landlord Success",
+    brand: "Sarah Johnson",
+    description: "Sarah manages 3 rental properties and was spending 15+ hours weekly screening tenants. AI Landlord reduced her workload to 2 hours while improving lead quality by 400%.",
+    tags: ["Small Landlord", "Time Savings", "Lead Quality", "Automation"],
     imageUrl: "/lovable-uploads/93ab0638-8190-4ccf-897f-21fda7f4f5ad.png",
     isFeatured: true,
-    link: "/projects/firecat",
+    link: "/projects/small-landlord",
     details: `
-      FireCat Group aimed to enhance safety in high-risk environments. WRLDS Technologies provided the 6th SENSE solution with secure real-time data transmission, high-quality sensors resistant to extreme conditions, integrated AI-powered clothing, and a centralized control unit. Features include Man Down Alarm, GPS positioning, vital sign monitoring, and Panic Button. Benefits: life-saving technology, machine learning preventing false alarms, durable hardware with 7-10 year lifespan, washable sensors, and Plug & Play installation with 12-20 hours of operation per charge.
+      Sarah Johnson was struggling to manage tenant screening for her 3 rental properties while working full-time. She was spending 15+ hours weekly responding to leads, scheduling showings, and manually screening applicants. AI Landlord automated her entire process, reducing her workload to just 2 hours per week while improving lead quality by 400%. The AI chatbot handles all initial inquiries, screens applicants based on her criteria, and only forwards qualified candidates for her review.
     `
   },
   {
     id: 2,
-    title: "Performance Athletic Footwear",
-    brand: "Global Sports Retail Leader",
-    description: "Smart Footwear R&D aiming to revolutionize development, fitting, and testing of athletic footwear.",
-    tags: ["Sports", "R&D", "Footwear", "Athletic Performance"],
+    title: "Property Management Scale",
+    brand: "Urban Properties LLC",
+    description: "Managing 25+ units across multiple properties, Urban Properties needed scalable automation. AI Landlord handles 200+ leads monthly with 95% screening accuracy.",
+    tags: ["Property Management", "Scale", "Multi-Property", "Automation"],
     imageUrl: "/lovable-uploads/b0622048-17b4-4c75-a3f0-6c9e17de1d09.png",
-    link: "/projects/sport-retail"
+    link: "/projects/property-management"
   },
   {
     id: 3,
-    title: "Workwear Climate Control",
-    brand: "European Multinational Textile Producer",
-    description: "Fully integrated temperature controls for professionals working in extreme heat and cold. Modular approach to enable full-body systems.",
-    tags: ["Climate Control", "Workwear", "Temperature Regulation", "Extreme Conditions"],
+    title: "Student Housing Solution",
+    brand: "Campus Rentals",
+    description: "Specialized screening for student housing with income verification, guarantor checks, and academic year lease management. 90% faster tenant placement.",
+    tags: ["Student Housing", "Income Verification", "Guarantor Checks", "Academic Leases"],
     imageUrl: "/lovable-uploads/6b0637e9-4a7b-40d0-b219-c8b7f879f93e.png",
-    link: "/projects/workwear"
+    link: "/projects/student-housing"
   },
   {
     id: 4,
-    title: "Ice Hockey Elite Skill Tracker",
-    brand: "Mars Blades",
-    description: "R&D product evaluating data from single IMU embedded in the hockey shoe. Aim: establish motion patterns that lead to ultimate acceleration, speed, and maneuverability.",
-    tags: ["Ice Hockey", "Motion Analysis", "Performance Tracking", "Sports"],
+    title: "Luxury Property Screening",
+    brand: "Elite Real Estate",
+    description: "High-end property management with enhanced screening criteria, income verification, and luxury amenity coordination. 100% qualified tenant placement.",
+    tags: ["Luxury Properties", "Enhanced Screening", "Income Verification", "Luxury Amenities"],
     imageUrl: "/lovable-uploads/c30e0487-2fa0-41d1-9a0b-699cb2855388.png",
-    link: "/projects/hockey"
+    link: "/projects/luxury-properties"
   },
   {
     id: 5,
-    title: "Dog Activity Counter",
-    brand: "UK Insurance Giant",
-    description: "R&D project embedding a step counter in a dog collar. Measures daily activity and sends real-time data to the cloud for veterinary consultancies.",
-    tags: ["Pet Technology", "Insurance", "Activity Tracking", "R&D"],
+    title: "Multi-Family Portfolio",
+    brand: "Metro Apartments",
+    description: "Managing 100+ units across 5 properties with centralized screening, unified criteria, and portfolio-wide analytics. 300% increase in qualified leads.",
+    tags: ["Multi-Family", "Portfolio Management", "Centralized Screening", "Analytics"],
     imageUrl: "/lovable-uploads/d5ce901e-2ce0-4f2a-bce1-f0ca5d6192df.png",
-    link: "/projects/pet-tracker"
+    link: "/projects/multi-family"
   }
 ];
 
@@ -130,13 +130,13 @@ const Projects = () => {
       <div className="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className={`text-center mb-10 max-w-3xl mx-auto transition-all duration-1000 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="inline-block mb-2 px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm font-medium">
-            Customer Cases
+            Success Stories
           </div>
           <h2 className="text-3xl font-bold mb-3">
-            From Textile to Intelligence
+            Real Results from Real Landlords
           </h2>
           <p className="text-gray-600">
-            Explore how our textile sensor technology is revolutionizing multiple industries with intelligent fabric solutions tailored to specific needs.
+            See how landlords across different property types and sizes are transforming their tenant screening process with AI Landlord.
           </p>
           {isMobile && (
             <div className="flex items-center justify-center mt-4 animate-pulse-slow">

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Activity, Shield, HardHat, Zap, ArrowRight, Box, Truck, Code, CheckCircle, Rocket, Factory, Microchip, Handshake, RefreshCcw, MessageSquare } from "lucide-react";
+import { Activity, Shield, HardHat, Zap, ArrowRight, Box, Truck, Code, CheckCircle, Rocket, Factory, Microchip, Handshake, RefreshCcw, MessageSquare, Bot, Clock, Users, FileText, Calendar, BarChart3 } from "lucide-react";
 import { cn } from '@/lib/utils';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -23,27 +23,27 @@ const Features = () => {
 
   const features = [
     {
-      icon: <Activity className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Sports Performance",
-      description: "Specialized fabrics that analyze form, provide instant feedback, and help prevent injuries in athletic equipment.",
+      icon: <Bot className="w-10 h-10 text-white transition-transform duration-300 transform" />,
+      title: "AI Chatbot",
+      description: "Intelligent 24/7 lead response that screens tenants across Zillow, Craigslist, Facebook, SMS, and email with natural language processing.",
       image: "/lovable-uploads/48e540e5-6a25-44e4-b3f7-80f3bfc2777a.png"
     },
     {
       icon: <Shield className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Military & Defense",
-      description: "Tactical gear with embedded sensors for soldier health monitoring, environmental awareness, and enhanced safety.",
+      title: "Background Screening",
+      description: "FCRA-compliant tenant screening via TransUnion SmartMove with secure document collection and verification.",
       image: "/lovable-uploads/48ecf6e2-5a98-4a9d-af6f-ae2265cd4098.png"
     },
     {
-      icon: <HardHat className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Industrial Safety",
-      description: "Protective workwear that detects hazards, monitors fatigue, and prevents workplace injuries through early intervention.",
+      icon: <Calendar className="w-10 h-10 text-white transition-transform duration-300 transform" />,
+      title: "Smart Scheduling",
+      description: "Automated property showing scheduling with calendar integration and reminder systems for qualified applicants.",
       image: "/lovable-uploads/cf8966e3-de0d-445f-9fbd-ee6c48daa7ff.png"
     },
     {
-      icon: <Zap className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Thermal Regulation",
-      description: "Adaptive heating and cooling textiles that respond to body temperature and environmental conditions.",
+      icon: <BarChart3 className="w-10 h-10 text-white transition-transform duration-300 transform" />,
+      title: "Lead Analytics",
+      description: "Comprehensive reporting and analytics to track lead quality, conversion rates, and time savings metrics.",
       image: "/lovable-uploads/6739bd63-bf19-4abd-bb23-0b613bbf7ac8.png"
     }
   ];
@@ -108,43 +108,45 @@ const Features = () => {
     };
   }, []);
 
-  const sensorCaseStudies = [{
+  const useCases = [{
     image: "/lovable-uploads/843446fe-638e-4efb-b885-ed3cd505325a.png",
-    title: "Firefighter Safety",
-    description: "Advanced protective gear with gas, temperature, positioning, and motion sensors for safer emergency response."
+    title: "Small Landlords (1-5 units)",
+    description: "Perfect for DIY landlords who want to automate their screening process without the complexity of enterprise solutions."
   }, {
     image: "/lovable-uploads/5463c9c5-0946-4280-a14b-17636ff69a98.png",
-    title: "Industrial Worker Protection",
-    description: "Safety workwear with vibration, pressure, and heating sensors to prevent injuries and monitor environmental hazards."
+    title: "Medium Landlords (6-20 units)",
+    description: "Scale your operations with automated lead qualification and comprehensive tenant screening across multiple properties."
   }, {
     image: "/lovable-uploads/c5f8ee24-9815-4ebe-b65d-6f3d449feb8b.png",
-    title: "Sports Performance",
-    description: "Smart athletic wear with temperature and pressure sensors that track hydration, foot strike patterns, and performance metrics."
+    title: "Property Management Companies",
+    description: "Enterprise-grade automation for managing multiple portfolios with advanced reporting and analytics."
   }];
-  const stepFlowItems = [{
-    icon: <Microchip className="h-10 w-10 text-gray-700" />,
-    title: "WRLDS Proprietary Modules",
-    description: "Our core technology components developed in-house"
+  
+  const workflowSteps = [{
+    icon: <MessageSquare className="h-10 w-10 text-gray-700" />,
+    title: "Lead Capture",
+    description: "Automatically capture leads from Zillow, Craigslist, Facebook, SMS, and email"
   }, {
-    icon: <Factory className="h-10 w-10 text-gray-700" />,
-    title: "Vetted Off-the-Shelf Hardware",
-    description: "Carefully selected components that complement our technology"
+    icon: <Bot className="h-10 w-10 text-gray-700" />,
+    title: "AI Screening",
+    description: "Intelligent chatbot asks qualifying questions based on your criteria"
   }, {
-    icon: <Handshake className="h-10 w-10 text-gray-700" />,
-    title: "Vetted Production Partners",
-    description: "Expert manufacturing partners for quality and reliability"
+    icon: <Shield className="h-10 w-10 text-gray-700" />,
+    title: "Background Check",
+    description: "Secure screening via TransUnion SmartMove with FCRA compliance"
   }];
+  
   const sprintPhases = [{
-    name: "Planning",
+    name: "Lead Response",
     icon: <CheckCircle className="h-4 w-4" />
   }, {
-    name: "Development",
+    name: "Screening",
     icon: <Code className="h-4 w-4" />
   }, {
-    name: "Testing",
+    name: "Qualification",
     icon: <Box className="h-4 w-4" />
   }, {
-    name: "Review",
+    name: "Handoff",
     icon: <RefreshCcw className="h-4 w-4" />
   }];
 
@@ -153,10 +155,11 @@ const Features = () => {
         <div className="w-full px-4 sm:px-6 lg:px-8" ref={featuresRef}> 
           <div className="text-center mb-10 max-w-3xl mx-auto feature-item">
             <div className="inline-block mb-2 px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
-              Textile Sensor Applications
+              AI Landlord Features
             </div>
+            <h2 className="text-3xl font-bold mb-4">Transform Your Tenant Screening</h2>
             <p className="text-gray-600 mt-4">
-              Our textile sensor technology transforms ordinary fabrics into intelligent interfaces that collect data, monitor conditions, and enhance performance across diverse sectors.
+              Our AI-powered platform automates every aspect of tenant screening, from initial lead response to qualified applicant handoff, saving you 10+ hours per week.
             </p>
           </div>
           
@@ -278,20 +281,19 @@ const Features = () => {
           <div className="mt-16 mb-8 feature-item">
             <div className="text-center mb-8">
               <div className="inline-block mb-2 px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
-                Textile Sensor Applications
+                Perfect For
               </div>
-              <h3 className="text-2xl font-bold">Real-World Use Cases</h3>
+              <h3 className="text-2xl font-bold">Who Uses AI Landlord</h3>
               <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
-                Explore how our textile sensors are applied in different professional contexts, 
-                from emergency response to construction and athletics.
-                <span className="block text-sm mt-1 text-blue-500">Scroll horizontally to see more examples →</span>
+                From individual landlords to property management companies, AI Landlord scales to meet your needs.
+                <span className="block text-sm mt-1 text-blue-500">Scroll horizontally to see more use cases →</span>
               </p>
             </div>
             
             <div className="rounded-xl overflow-hidden bg-white p-4 feature-item">
               <Carousel className="w-full max-w-7xl mx-auto">
                 <CarouselContent className="flex">
-                  {sensorCaseStudies.map((study, index) => <CarouselItem key={index} className="md:basis-1/3 flex-shrink-0">
+                  {useCases.map((study, index) => <CarouselItem key={index} className="md:basis-1/3 flex-shrink-0">
                       <Card className="border border-gray-100 shadow-md">
                         <CardContent className="p-0">
                           <div className="w-full h-full">
@@ -311,19 +313,19 @@ const Features = () => {
                 </div>
               </Carousel>
               <div className="text-center mt-6 text-sm text-gray-600">
-                <p className="font-medium">These examples showcase just a few ways our textile sensors can enhance safety and performance</p>
+                <p className="font-medium">Join hundreds of landlords who have automated their tenant screening process</p>
               </div>
             </div>
           </div>
         </div>
         <div className="text-center mt-12 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
           <Button onClick={scrollToContact} className="inline-flex items-center px-4 sm:px-6 py-3 bg-gray-700 hover:bg-gray-800 text-white rounded-lg shadow-md hover:shadow-lg transition-all group w-full sm:w-auto">
-            Need Custom Solutions?
+            Start Free Trial
             <MessageSquare className="ml-2 w-4 h-4 group-hover:animate-pulse" />
           </Button>
           
           <Button onClick={() => window.scrollTo(0, 0)} className="inline-flex items-center px-4 sm:px-6 py-3 bg-white text-gray-700 rounded-lg border border-gray-200 hover:bg-gray-50 hover:shadow-md transition-all group w-full sm:w-auto">
-            Learn More About Our Technology
+            Learn More About Our Process
             <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>
@@ -333,18 +335,17 @@ const Features = () => {
         <div className="w-full px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <div className="inline-block mb-2 px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
-              Our Approach
+              How It Works
             </div>
-            <h2 className="text-3xl font-bold mb-4">How our technology works</h2>
+            <h2 className="text-3xl font-bold mb-4">The AI Landlord Process</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              WRLDS builds hardware and software with proprietary and off-the-shelf modules, 
-              allowing us to develop completely unique solutions at high speed and lower risk.
+              From lead capture to qualified applicant handoff, our AI handles every step of the tenant screening process.
             </p>
           </div>
           
           <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-8 mb-10 transition-all duration-300 hover:shadow-xl">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-              {stepFlowItems.map((item, index) => <HoverCard key={index}>
+              {workflowSteps.map((item, index) => <HoverCard key={index}>
                   <HoverCardTrigger asChild>
                     <div className="bg-gradient-to-br from-white to-gray-50 rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 h-full cursor-pointer">
                       <div className="flex flex-col items-center text-center">
@@ -360,9 +361,9 @@ const Features = () => {
                     <div className="space-y-2">
                       <h4 className="text-sm font-semibold">{item.title}</h4>
                       <p className="text-sm">{item.description}</p>
-                      {index === 0 && <p className="text-xs text-gray-500">Our proprietary technology provides the core foundation of every solution we build.</p>}
-                      {index === 1 && <p className="text-xs text-gray-500">We carefully select the best off-the-shelf components to complement our proprietary technology.</p>}
-                      {index === 2 && <p className="text-xs text-gray-500">Our network of production partners ensures quality manufacturing at scale.</p>}
+                      {index === 0 && <p className="text-xs text-gray-500">Automatically captures leads from multiple platforms and normalizes the data.</p>}
+                      {index === 1 && <p className="text-xs text-gray-500">AI asks qualifying questions based on your criteria and scores applicants in real-time.</p>}
+                      {index === 2 && <p className="text-xs text-gray-500">Secure background checks with full FCRA compliance and legal protection.</p>}
                     </div>
                   </HoverCardContent>
                 </HoverCard>)}
@@ -389,15 +390,15 @@ const Features = () => {
               <div className="max-w-3xl mx-auto">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 gap-2">
                   <div className="flex items-center">
-                    <h3 className="text-xl font-bold">Adaptation Project</h3>
+                    <h3 className="text-xl font-bold">Lead Processing Time</h3>
                   </div>
                   <div className="flex items-center">
-                    <span className="text-sm text-gray-500 mr-2">Iterative Development</span>
-                    <RefreshCcw className="h-5 w-5 text-gray-600 animate-rotate-slow" />
+                    <span className="text-sm text-gray-500 mr-2">Average Response</span>
+                    <Clock className="h-5 w-5 text-gray-600 animate-rotate-slow" />
                   </div>
                 </div>
                 
-                <p className="text-gray-600 mb-4">Working iteratively with customers to tailor solutions to their needs</p>
+                <p className="text-gray-600 mb-4">From lead capture to qualified applicant notification</p>
                 
                 <div className="relative mb-2">
                   <Progress value={progressValue} className="h-3 bg-gray-200" />
@@ -419,10 +420,10 @@ const Features = () => {
                     <div className="bg-green-100 rounded-full p-1 mr-2 shrink-0">
                       <CheckCircle className="h-4 w-4 text-green-600" />
                     </div>
-                    <span className="text-sm text-gray-600">Customer feedback integrated at every stage</span>
+                    <span className="text-sm text-gray-600">Under 2 minutes average response time</span>
                   </div>
                   <div className="text-sm text-gray-500 flex items-center mt-2 sm:mt-0">
-                    <span className="mr-2">Continuous improvement</span>
+                    <span className="mr-2">24/7 availability</span>
                     <div className="flex space-x-1">
                       <span className="inline-block w-2 h-2 bg-gray-300 rounded-full animate-pulse"></span>
                       <span className="inline-block w-2 h-2 bg-gray-400 rounded-full animate-pulse animation-delay-200"></span>
@@ -454,11 +455,11 @@ const Features = () => {
               <div className="relative inline-block mb-4">
                 <div className="absolute inset-0 bg-black/10 rounded-full animate-pulse-slow"></div>
                 <div className="relative bg-white rounded-full p-4 border border-gray-200 shadow-md">
-                  <Rocket className="h-10 w-10 text-gray-700" />
+                  <Users className="h-10 w-10 text-gray-700" />
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-2">Hitting the Market</h3>
-              <p className="text-gray-700">Ready to scale, produce, and launch</p>
+              <h3 className="text-xl font-bold mb-2">Qualified Applicants</h3>
+              <p className="text-gray-700">Only pre-screened, qualified tenants reach your inbox</p>
               <div className="flex justify-center mt-4 space-x-2">
                 <span className="inline-block w-3 h-3 rounded-full bg-gray-300 animate-pulse"></span>
                 <span className="inline-block w-3 h-3 rounded-full bg-gray-500 animate-pulse animation-delay-200"></span>
@@ -469,13 +470,13 @@ const Features = () => {
           
           <div className="text-center">
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-              <Link to="/tech-details" onClick={() => window.scrollTo(0, 0)} className="inline-flex items-center px-4 sm:px-6 bg-white text-gray-700 rounded-lg border border-gray-200 hover:bg-gray-50 hover:shadow-md transition-all group py-3 w-full sm:w-auto justify-center">
-                Learn More About Our Technology
+              <Link to="/development-process" onClick={() => window.scrollTo(0, 0)} className="inline-flex items-center px-4 sm:px-6 bg-white text-gray-700 rounded-lg border border-gray-200 hover:bg-gray-50 hover:shadow-md transition-all group py-3 w-full sm:w-auto justify-center">
+                Learn More About Our Process
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
               
               <Button onClick={scrollToContact} className="inline-flex items-center px-4 sm:px-6 py-3 bg-gray-700 hover:bg-gray-800 text-white rounded-lg shadow-md hover:shadow-lg transition-all group w-full sm:w-auto justify-center">
-                Contact Our Experts
+                Start Free Trial
                 <MessageSquare className="ml-2 w-4 h-4 group-hover:scale-110 transition-transform" />
               </Button>
             </div>
