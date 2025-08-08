@@ -73,9 +73,9 @@ const Navbar = () => {
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                  <Link to="/dashboard">
+                  <Link to="/login">
                     <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
-                      Dashboard
+                      Login
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
@@ -183,11 +183,11 @@ const Navbar = () => {
             About
           </Link>
 
-          <Link to="/dashboard" className={cn("block px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
+          <Link to="/login" className={cn("block px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
             setIsMenuOpen(false);
             window.scrollTo(0, 0);
           }}>
-            Dashboard
+            Login
           </Link>
           
           {/* Simplified Success Stories - no dropdown */}

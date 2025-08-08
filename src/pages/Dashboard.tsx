@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from "react";
-import PageLayout from "@/components/PageLayout";
+// import PageLayout from "@/components/PageLayout";
 import SEO from "@/components/SEO";
 import {
   Sidebar,
@@ -236,13 +236,13 @@ export default function Dashboard() {
   };
 
   return (
-    <PageLayout showContact={false}>
+    <>
       <SEO
         title={pageTitle}
         description="AI Landlord dashboard: manage properties, leads, applications, showings, analytics, and settings in one place."
       />
       <SidebarProvider>
-        <div className="flex w-full min-h-screen pt-16">
+        <div className="flex w-full min-h-screen">
           <Sidebar collapsible="icon">
             <AppSidebar activeKey={active} onSelect={setActive} />
           </Sidebar>
@@ -258,6 +258,6 @@ export default function Dashboard() {
           </SidebarInset>
         </div>
       </SidebarProvider>
-    </PageLayout>
+    </>
   );
 }
