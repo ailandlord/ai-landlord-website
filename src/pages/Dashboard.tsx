@@ -242,7 +242,7 @@ export default function Dashboard() {
         description="AI Landlord dashboard: manage properties, leads, applications, showings, analytics, and settings in one place."
       />
       <SidebarProvider>
-        <div className="flex w-full min-h-screen">
+        <div className="flex w-full min-h-screen pt-16">
           <Sidebar collapsible="icon">
             <AppSidebar activeKey={active} onSelect={setActive} />
           </Sidebar>
